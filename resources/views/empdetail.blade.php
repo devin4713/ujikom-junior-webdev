@@ -29,7 +29,8 @@
                                 </tr>
                                 <tr>
                                     <td class="col-md-3"><strong>Deskripsi:</strong></td>
-                                    <td class="col-md-9">{{ $employee->deskripsi }}</td>
+                                    {{-- <td class="col-md-9"><pre>{{ $employee->deskripsi }}</pre></td> --}}
+                                    <td class="col-md-9">{!! nl2br(e($employee->deskripsi)) !!}</td>
                                 </tr>
                             </tbody>
                         </table>
